@@ -1,0 +1,15 @@
+﻿<Window x:Class="Asignacion1.MainWindow" Background="Aquamarine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asignacion1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="342,266,0,0" VerticalAlignment="Top" Width="109" Height="29" FontSize="14" Click="BtnReproducir_Click"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="26" Margin="72,31,0,0" VerticalAlignment="Top" Width="640" Visibility="Hidden" Thumb.DragStarted="ProgressBar_DragStarted" Thumb.DragCompleted="ProgressBar_DragCompleted"/>
+        <TextBlock x:Name="txtKaraoke" HorizontalAlignment="Left" Margin="58,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="654" FontSize="14" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
