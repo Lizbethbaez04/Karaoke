@@ -32,9 +32,11 @@ namespace Asignacion1
         WaveOut output;
         AudioFileReader reader;        
         bool dragging = false;
+        int actual;
         public MainWindow()
         {
             InitializeComponent();
+            actual = 0;
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(500);
             timer.Tick += Timer_Tick;
@@ -45,6 +47,30 @@ namespace Asignacion1
             if (!dragging)
             {
                 progressBar.Value = reader.CurrentTime.TotalSeconds;
+            }
+            var segundosActuales = reader.CurrentTime.TotalSeconds;
+            var segundosTotales = reader.TotalTime.TotalSeconds;
+            var cambioTiempo = new List<int>()
+            {0,3,5,15,
+
+            };
+            var cambioLetra = new List<String>()
+            {
+                "Hice todo lo que dijeron que un chico no podía hacer","Porque llegué a Ciudad Almeja",
+                "vencí a los cícloples", "viajé con Hassel Hove",
+            };
+
+            var cambioTiempo2 = cambioTiempo[actual];
+
+            if (segundosActuales >= cambioTiempo2)
+            {
+                var textoCambioSiguiente = cambioLetra[actual];
+                txtKaraoke.Text = textoCambioSiguiente;
+
+                if (cambioTiempo.Count > actual + 1)
+                {
+                    actual++;
+                }
             }
         }
 
@@ -63,7 +89,8 @@ namespace Asignacion1
 
             progressBar.Maximum = reader.TotalTime.TotalSeconds;
             progressBar.Value = reader.CurrentTime.TotalSeconds;
-            timer.Start();                     
+            timer.Start();
+           
         }
 
         private void ProgressBar_DragStarted(object sender, System.Windows.Controls.Primitives.DragStartedEventArgs e)
