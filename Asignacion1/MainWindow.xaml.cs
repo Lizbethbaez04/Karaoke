@@ -51,13 +51,29 @@ namespace Asignacion1
             var segundosActuales = reader.CurrentTime.TotalSeconds;
             var segundosTotales = reader.TotalTime.TotalSeconds;
             var cambioTiempo = new List<int>()
-            {0,3,5,15,
-
+            {23, 28, 33, 37, 41, 45, 50, 54, 59, 63, 67, 71, 76, 79, 81, 85, 87, 90, 111, 114, 119,
+             123, 128, 132, 136, 141, 146, 148, 150, 155, 157, 159, 163, 165, 167, 171, 174, 176, 177,
+             198, 201               
             };
             var cambioLetra = new List<String>()
-            {
-                "Hice todo lo que dijeron que un chico no podía hacer","Porque llegué a Ciudad Almeja",
-                "vencí a los cícloples", "viajé con Hassel Hove",
+            {//29
+                "Tengo que confesar que a veces","No me gusta tu forma de ser",
+                "Luego te me desapareces", "Y no entiendo muy bien por qué", "No dices nada romatico",
+                "Cuando llega el atardecer", "Te pones de un humor extraño", "Con cada luna llena al mes",
+                "Pero todo lo demás", "Le gana lo bueno que me das", "Solo tenerte cerca",
+                "Siento que vuelvo a empezar", "Yo te quiero \ncon limón y sal",
+                "Yo te quiero \ntal y como estás", "No hace falta \ncambiarte nada",
+                "Yo te quiero si vienes o si vas", "Si subes, si bajas, si no estás",
+                "Seguro \nde lo que sientes", "Tengo que confesarte ahora", "Nunca creí en la felicidad", 
+                "A veces \nalgo se le parece", "Pero es pura casualidad", "Luego me vengo a encontrar",
+                "Con tus ojos\nMe dan algo más", "Solo tenerte cerca", "Siento que vuelvo a empezar",
+                "Yo te quiero \ncon limón y sal", "Yo te quiero tal y como estás",
+                "No hace falta\nCambiarte nada", "Yo te quiero si vienes o si vas",
+                "Si subes, si bajas, si no estás", "Seguro\nDe lo que sientes",
+                "Yo te quiero con limón y sal", "Yo te quiero tal y como estás",
+                "No hace falta\nCambiarte nada", "Yo te quiero si vienes o si vas",
+                "si subes, si bajas, si no estás", "Seguro\nDe lo que sientes", "Solo tenerte cerca",
+                "Siento que vuelvo a empezar"
             };
 
             var cambioTiempo2 = cambioTiempo[actual];
