@@ -80,7 +80,7 @@ namespace Asignacion1
             txtKaraoke.Visibility = Visibility.Visible;
             btnReproducir.Visibility = Visibility.Collapsed;        
                     
-            reader = new AudioFileReader(@"C:\Users\alumno\Downloads\bob-esponja.mp3");
+            reader = new AudioFileReader(@"C:\Users\lizba\Downloads\limonysal.mp3");
             output = new WaveOut();
             output.Init(reader);
             output.Play();
