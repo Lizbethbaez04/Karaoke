@@ -61,13 +61,13 @@ namespace Asignacion1
                 "Luego te me desapareces", "Y no entiendo muy bien por qué", "No dices nada romatico",
                 "Cuando llega el atardecer", "Te pones de un humor extraño", "Con cada luna llena al mes",
                 "Pero todo lo demás", "Le gana lo bueno que me das", "Solo tenerte cerca",
-                "Siento que vuelvo a empezar", "Yo te quiero \ncon limón y sal",
-                "Yo te quiero \ntal y como estás", "No hace falta \ncambiarte nada",
+                "Siento que vuelvo a empezar", "Yo te quiero \nCon limón y sal",
+                "Yo te quiero \nTal y como estás", "No hace falta \nCambiarte nada",
                 "Yo te quiero si vienes o si vas", "Si subes, si bajas, si no estás",
-                "Seguro \nde lo que sientes", "Tengo que confesarte ahora", "Nunca creí en la felicidad", 
-                "A veces \nalgo se le parece", "Pero es pura casualidad", "Luego me vengo a encontrar",
+                "Seguro \nDe lo que sientes", "Tengo que confesarte ahora", "Nunca creí en la felicidad", 
+                "A veces \nAlgo se le parece", "Pero es pura casualidad", "Luego me vengo a encontrar",
                 "Con tus ojos\nMe dan algo más", "Solo tenerte cerca", "Siento que vuelvo a empezar",
-                "Yo te quiero \ncon limón y sal", "Yo te quiero tal y como estás",
+                "Yo te quiero \nCon limón y sal", "Yo te quiero tal y como estás",
                 "No hace falta\nCambiarte nada", "Yo te quiero si vienes o si vas",
                 "Si subes, si bajas, si no estás", "Seguro\nDe lo que sientes",
                 "Yo te quiero con limón y sal", "Yo te quiero tal y como estás",
@@ -96,7 +96,7 @@ namespace Asignacion1
             txtKaraoke.Visibility = Visibility.Visible;
             btnReproducir.Visibility = Visibility.Collapsed;        
                     
-            reader = new AudioFileReader(@"limonysal.mp3");
+            reader = new AudioFileReader(@"C:\Users\lizba\Downloads\Julieta Venegas - Limon Y Sal (Video Oficial).mp3");
             output = new WaveOut();
             output.Init(reader);
             output.Play();

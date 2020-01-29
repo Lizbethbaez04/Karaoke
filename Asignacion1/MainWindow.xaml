@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="342,350,0,0" VerticalAlignment="Top" Width="109" Height="29" FontSize="14" Click="BtnReproducir_Click"/>
         <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="26" Margin="72,31,0,0" VerticalAlignment="Top" Width="640" Visibility="Hidden" Thumb.DragStarted="ProgressBar_DragStarted" Thumb.DragCompleted="ProgressBar_DragCompleted"/>
-        <TextBlock x:Name="txtKaraoke" HorizontalAlignment="Left" Margin="58,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="654" FontSize="14" Visibility="Hidden"/>
+        <TextBlock x:Name="txtKaraoke" HorizontalAlignment="Left" FontSize="40" Margin="58,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="654"  Visibility="Hidden"/>
 
     </Grid>
 </Window>
